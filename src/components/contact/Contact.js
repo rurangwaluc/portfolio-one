@@ -11,13 +11,7 @@ const Contact = ({ myTheme }) => {
       console.log(form.current);
   
       emailjs
-        .sendForm(
-          "service_o12zzz5",
-          "template_twwwlsx",
-          form.current,
-          "FgJjZtuAdludoQGlg"
-        )
-        .then(
+        .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY').then(
           (result) => {
             toast.success("Message sent successfully");
           },
