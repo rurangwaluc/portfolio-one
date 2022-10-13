@@ -1,0 +1,45 @@
+$box-shadow:0 .5rem 1rem rgba(0,0,0,.7);
+
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap:1.5rem;
+  }
+
+.skills{
+    background: var(--background);
+     color: var(--foreground);
+    .box-container{
+      @include grid(16rem);
+  
+      .box{
+        padding:2rem;
+        text-align: center;
+        box-shadow: $box-shadow;
+        border-radius: .5rem;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+  
+        &:hover{
+          // background: $black-color;
+          transform: scale(1.1);
+  
+          h3{
+             color: var(--forebackground);
+          }
+        }
+  
+        img{
+          height: 7rem;
+          margin-bottom: 1rem;
+        }
+  
+        h3{
+           color: var(--forebackground);
+          font-size: 1.7rem;
+          font-weight: normal;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }

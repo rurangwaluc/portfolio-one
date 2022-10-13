@@ -1,0 +1,108 @@
+$overlay-color: rgba(50, 70, 80, 0.7);
+
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap:1.5rem;
+  }
+
+.portfolio{
+    text-align: center;
+    background: var(--background);
+    color: var(--foreground);
+    
+    .box-container{
+      @include grid(31rem);
+      margin-bottom: 2rem;
+  
+      .box{
+        height: 40rem;
+        overflow:hidden;
+        position: relative;
+  
+        &:hover{
+          .content{
+            transform: translateY(0%);
+          }
+        }
+  
+        img{
+          height: 100%;
+          width:100%;
+          object-fit: cover;
+        }
+  
+        .content{
+          position: absolute;
+          top:0; left:0;
+          height: 100%;
+          width:100%;
+          background: $overlay-color;
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          justify-content: center;
+          padding:2rem;
+          transform: translateY(-100%);
+          transition: .2s linear;
+  
+          h3{
+            font-size: 2.5rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: normal;
+          }
+  
+          p{
+            color:  #ffffff;
+            letter-spacing: 1px;
+            line-height: 28px;
+            font-size: 15px;
+            text-align: justify;
+          }
+  
+          a{
+            font-size: 1.5rem;
+            color: #ffffff;
+            padding: 10px 15px;
+  
+            &:hover{
+             padding: 10px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .projectsNav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+     li{
+          text-align: center;
+          font-size: 1.3rem;
+          font-family: 'Courier New', Courier, monospace;
+          background: #1f1f1f;
+          color: #ffffff;
+          border: 3px dotted #ff7722;
+          border-radius: 5rem;
+          padding:.5rem 1.5rem;
+          margin-right: 1rem;
+          cursor: pointer;
+        
+     }
+  }
+
+  @media (max-width:440px){
+    .projectsNav{
+        flex-direction: column;
+        li{
+            margin-bottom: 1rem;  
+            margin-right: .1rem;
+        }
+    }
+
+}
