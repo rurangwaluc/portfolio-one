@@ -3,13 +3,13 @@
     width: 80px;
     border-radius: 50px;
     margin: auto;
-    background-image: linear-gradient(rgb(250, 250, 250), rgb(255, 255, 255));
+    background-image: linear-gradient(rgb(250, 250, 250), rgb(255, 255, 255)) !important;
     position: relative;
     cursor: pointer;
 }
 
 .toggle.night {
-    background-image: linear-gradient(rgb(49, 49, 49), rgb(70, 68, 71));
+    background-image: linear-gradient(rgb(49, 49, 49), rgb(70, 68, 71)) !important;
 }
 
 .notch {
@@ -24,6 +24,8 @@
     z-index: 1;
     transition: all 0.3s ease;
 }
+
+
 
 .notch > .crater {
     background: burlywood;

@@ -12,7 +12,7 @@ const Project = ({ item }) => {
       <h3>{item.name}</h3>
       <p>{item.description}</p>
         <div>
-            <button className='smBtn'>Buy <i className="fa fa-phone-alt"></i></button>
+            <button className='smBtn'>Preview <i className="fa fa-up-right-from-square"></i></button>
         </div>
       </div>
       </div>
