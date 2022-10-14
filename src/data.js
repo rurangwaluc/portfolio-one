@@ -1,5 +1,4 @@
 import * as Icons from "react-icons/fa";
-import * as Icon from "react-icons/fc";
 // projects images
 
 import Project1 from './assets/img-1.jpg';
@@ -23,12 +22,12 @@ export const navItems = [
     path: "#about",
     nName: "nav-item",
     sName: "sidebar-item",
-    icon: <Icon.FcAbout />,
+    icon: <Icons.FaUser />,
   },
   {
     id: 3,
-    title: "Services",
-    path: "#services",
+    title: "Experience",
+    path: "#experience",
     nName: "nav-item",
     sName: "sidebar-item",
     icon: <Icons.FaBriefcase />,
