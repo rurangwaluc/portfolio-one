@@ -58,19 +58,14 @@ const Header = ({ myTheme, onToggleTheme, onSwitch }) => {
           </ul>
         )}
         {!mobile && (
-      //   <div onClick={onToggleTheme}>
-      //      <span className="toggle-btn">
-      //        <Icons.FaMoon color="pink" size={12} />
-      //        <Icons.FaSun color="yellow" size={12} />
-      //        <div className={onSwitch ? "ball move" : "ball"}></div>
-      //      </span>
-      //  </div>
-      <div onClick={onToggleTheme}>
-        <span className="toggle-btn">
-
-        <Toggle toggled={toggled} onClick={handleClick} />
-        </span>
-      </div>
+        <div onClick={onToggleTheme}>
+           <span className="toggle-btn">
+             <Icons.FaSun color="yellow" size={12} />
+             <Icons.FaMoon color="pink" size={12} />
+             <div className={onSwitch ? "ball move" : "ball"}></div>
+           </span>
+       </div>
+      
 
         )}
 
@@ -105,12 +100,13 @@ const Header = ({ myTheme, onToggleTheme, onSwitch }) => {
               );
             })}
           </ul>
-         <div onClick={onToggleTheme}>
-        <span className="toggle-btn">
-
-        <Toggle toggled={toggled} onClick={handleClick} />
-        </span>
-      </div>
+          <div onClick={onToggleTheme}>
+          <span className="toggle-btn">
+            <FaSun color="yellow" size={16} />
+            <FaMoon color="pink" size={16} />
+            <div className={onSwitch ? "ball move" : "ball"}></div>
+          </span>
+        </div>
       </div>
      
     </header>

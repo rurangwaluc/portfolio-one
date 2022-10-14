@@ -22,7 +22,7 @@ export const navItems = [
     path: "#about",
     nName: "nav-item",
     sName: "sidebar-item",
-    icon: <Icons.FaUser />,
+    icon: <Icons.FaInfo />,
   },
   {
     id: 3,
