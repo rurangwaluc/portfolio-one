@@ -156,7 +156,12 @@
     padding: 1rem;
     background: var(--background);
   }
-
+  
+  .toggle-btn {
+  
+    text-align: center  ;
+  
+  }
 
 
 }
@@ -187,6 +192,13 @@
   .sidebar-item a span {
     display: none;
   }
+
+  
+.toggle-btn {
+  
+  text-align: center  ;
+
+}
  
 }
 
