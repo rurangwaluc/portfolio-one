@@ -1,14 +1,10 @@
 import React from "react";
-import "./Toggle.scss";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function Toggle({ toggled, onClick }) {
     return (
-        <div onClick={onClick} className={`toggle${toggled ? " night" : ""}`}>
-            <div className="notch">
-                {/* <div className="crater" />
-                <div className="crater" /> */}
-            </div>
-         
+        <div onClick={onClick} >
+          { toggled ? <FaMoon size={22} color="#fda740" /> : <FaSun size={22} color="#fda740" /> }
         </div>
     );
 }
