@@ -47,7 +47,7 @@ export const navItems = [
     path: "#contact",
     nName: "nav-item",
     sName: "sidebar-item",
-    icon: <Icons.FaPhone />,
+    icon: <Icons.FaPhoneAlt />,
   },
 ];
 
