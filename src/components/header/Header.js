@@ -9,11 +9,11 @@ const Header = ({ myTheme, onToggleTheme, onSwitch }) => {
 
   const [mobile, setMobile] = useState(false);
   const [sidebar, setSidebar] = useState(false);
-  const [toggled, setToggled] = React.useState(false);
+  // const [toggled, setToggled] = React.useState(false);
 
-  const handleClick = () => {
-      setToggled((s) => !s);
-  };
+  // const handleClick = () => {
+  //     setToggled((s) => !s);
+  // };
 
   useEffect(() => {
     if (window.innerWidth < 1065) {
@@ -88,7 +88,7 @@ const Header = ({ myTheme, onToggleTheme, onSwitch }) => {
       </nav>
 
       <div className={ sidebar ? "sidebar active" : "sidebar"}>
-      <ul className="sidebar-items">
+          <ul className="sidebar-items">
             {navItems.map((item) => {
               return (
                 <li  onClick={() => setSidebar(!sidebar)} key={item.id} className={item.sName}>
@@ -101,13 +101,13 @@ const Header = ({ myTheme, onToggleTheme, onSwitch }) => {
             })}
           </ul>
           <div onClick={onToggleTheme}>
-          <span className="toggle-btn">
-            <FaSun color="yellow" size={16} />
-            <FaMoon color="pink" size={16} />
-            <div className={onSwitch ? "ball move" : "ball"}></div>
-          </span>
-        </div>
-      </div>
+            <span className="toggle-btn">
+              <FaSun color="yellow" size={16} />
+              <FaMoon color="pink" size={16} />
+              <div className={onSwitch ? "ball move" : "ball"}></div>
+            </span>
+          </div>
+       </div>
      
     </header>
   );

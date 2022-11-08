@@ -12,7 +12,7 @@ $overlay-color: rgba(50, 70, 80, 0.7);
     color: var(--foreground);
     
     .box-container{
-      @include grid(31rem);
+      @include grid(29rem);
       margin-bottom: 2rem;
   
       .box{
